@@ -4,8 +4,11 @@ package com.company.service;
 import com.company.entities.Driver;
 import com.company.entities.Truck;
 
+import javax.swing.plaf.nimbus.State;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.Stack;
 
 import static com.company.Main.*;
 
@@ -34,7 +37,6 @@ public class ServiceImpl implements Service{
 
     @Override
     public void startRepair(int truckId) {
-
     }
 
     @Override

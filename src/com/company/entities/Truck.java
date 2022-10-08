@@ -6,6 +6,37 @@ public class Truck {
     private String driver;
     private State State;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTruckName() {
+        return truckName;
+    }
+
+    public void setTruckName(String truckName) {
+        this.truckName = truckName;
+    }
+
+    public String getDriver() {
+        return driver;
+    }
+
+    public void setDriver(String driver) {
+        this.driver = driver;
+    }
+
+    public Truck.State getState() {
+        return State;
+    }
+
+    public void setState(Truck.State state) {
+        State = state;
+    }
 
     public Truck(int id, String truckName, String driver, State State) {
         this.id = id;
@@ -17,14 +48,12 @@ public class Truck {
 
     @Override
     public String toString() {
-        return id + "  |" + truckName + "     |" + State + "      |" + driver;
+        return id + "  |" + truckName + "       |" + State + "      |" + driver ;
     }
 
-}
+    enum State {
+        BASE, ROUTE, REPAIR
 
-enum State {
-    BASE, ROUTE, REPAIR
-
-
+    }
 }
 
